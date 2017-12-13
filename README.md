@@ -9,6 +9,7 @@ last only until [this Pull Request](https://github.com/andriydruk/RxDNSSD/pull/3
 repositories {
   maven { url "https://dl.bintray.com/aurae/maven/" }
 }
+
 dependencies {
   implementation "de.mannodermaus:druk-dnssd-rxjava2:0.9.5"
 }
@@ -16,8 +17,12 @@ dependencies {
 
 ### Usage
 
-Please refer to [the upstream repository](https://github.com/andriydruk/RxDNSSD) for details
-on how to use the bindings.
+Please refer to [the upstream repository](https://github.com/andriydruk/RxDNSSD#rxdnssd) for details on how to use the bindings. Make sure to use the proper RxJava 2 type as detailed below:
+
+|RxJava 1 Type|-->|RxJava 2 Type|
+|---|---|---|
+|`RxDnssdBindable`||`Rx2DnssdBindable`|
+|`RxDnssdEmbedded`||`Rx2DnssdEmbedded`|
 
 ### License
 
